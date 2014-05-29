@@ -1,0 +1,18 @@
+<div class="left">
+	<ul>
+		<li><a href="<?= domain ?>">Trang chủ</a></li>
+		<li><a href="<?= domain ?>user/">Thành viên</a></li>
+		<li><a href="<?= domain ?>import/">Vào tiền</a></li>
+		<li><a href="<?= domain ?>export/">Ra tiền</a></li>
+	</ul>
+</div>
+<div class="right">
+	<ul>
+		<?php if($Auth) { ?>
+		<li><a href="<?= domain ?>user/end">Thoát</a></li>
+		<?php }else{ ?>
+		<li><a href="<?= domain ?>">Dang nhap</a></li>
+		<?php } ?>
+	</ul>	
+</div>
+

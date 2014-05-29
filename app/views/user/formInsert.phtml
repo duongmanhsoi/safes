@@ -1,0 +1,37 @@
+<form action="<?=domain ?>user/insert" method="post" id="userExport">
+<input type="hidden" name="id" value="<?= $id ?>" />
+<!-- Begin Box -->
+<div class="box">
+    <div class="box_01">
+        <div class="box_01_1"><h1>ĐĂNG KÝ THÀNH VIÊN</h1></div>
+        <div class="box_01_2"></div>
+    </div>
+    <div class="box_02">
+        <div id="user">
+            <ul class="user top">
+                <li style="width:100%; text-align: left">Tên truy cập</li>
+                <li><div style="width:140px">Mật khẩu</div></li>
+                <li><div style="width:140px">Nhập lại mật khẩu</div></li>
+                <li><div style="width:140px">Phân quyền</div></li>
+                <li><div style="width:90px">X</div></li>
+            </ul>
+            <ul class="user bottom even">
+                <li style="width:100%; text-align: left"><input id="login" type="text" name="login" style="width:98%" value="<?= $export ?>" /></li>
+                <li><div style="width:140px"><input id="password" type="text" name="password" value="<?= $export ?>" /></div></li>
+                <li><div style="width:140px"><input id="repeatPassword" type="text" name="repeatPassword" value="<?= $export ?>" /></div></li>
+                <li>
+                    <div style="width:140px">
+                        <select name="type">
+                            <option value="0">Thành viên</option>
+                            <option value="1">Quản lý</option>
+                        </select>
+                    </div>
+                </li>
+                <li><div style="width:90px"><button>Thêm mới</button></div></li>
+            </ul>
+        </div>     
+    </div>
+    <div class="box_03"></div>
+</div>
+<!-- End Box -->
+</form>

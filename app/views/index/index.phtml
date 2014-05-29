@@ -1,0 +1,9 @@
+<?php
+if($Auth) {
+    $this->partial("index/statistics");
+	$this->partial("export/list");
+	$this->partial("import/list");  
+} else {
+	$this->partial("user/formSelect");
+}
+?>

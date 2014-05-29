@@ -1,0 +1,58 @@
+<form action="<?= domain ?><?= $action ?>/" method="get">
+<ul class="box_01_2_1 datetime">
+    <li style="text-align: right">Từ: </li>
+    <li>
+        <select name="startYear">
+            <option value="">Năm</option>
+            <?php for ($year = 2014; $year <= 2020; $year++) { ?>
+            <option value="<?= $year ?>"><?= $year ?></option>
+            <?php } ?>
+        </select>
+    </li>
+    <li>
+        <select name="startMonth">
+            <option value="">Tháng</option>
+            <?php for ($month = 1; $month <= 12; $month++) { ?>
+            <option value="<?= $month ?>"><?= $month ?></option>
+            <?php } ?>
+        </select>
+    </li>
+    <li>
+        <select name="startDay">
+            <option value="">Ngày</option>
+            <?php for ($day = 1; $day <= 31; $day++) { ?>
+            <option value="<?= $day ?>"><?= $day ?></option>
+            <?php } ?>
+        </select>
+    </li>
+    <li style="width:30px">&nbsp</li>
+    <li style="text-align:right">Đến: </li>
+    <li>
+        <select name="endYear">
+            <option value="">Năm</option>
+            <?php for ($year = 2014; $year <= 2020; $year++) { ?>
+            <option value="<?= $year ?>"><?= $year ?></option>
+            <?php } ?>
+        </select>
+    </li>
+    <li>
+        <select name="endMonth">
+            <option value="">Tháng</option>
+            <?php for ($month = 1; $month <= 12; $month++) { ?>
+            <option value="<?= $month ?>"><?= $month ?></option>
+            <?php } ?>
+        </select>
+    </li>
+    <li>
+        <select name="endDay">
+            <option value="">Ngày</option>
+            <?php for ($day = 1; $day <= 31; $day++) { ?>
+            <option value="<?= $day ?>"><?= $day ?></option>
+            <?php } ?>
+        </select>
+    </li>
+    <li>
+        <button>Xem</button>
+    </li>
+</ul>
+</form>
